@@ -34,7 +34,7 @@ public class LambdaStepTest {
             $(partialLinkText("Issues")).click();
         });
         step("Check Issue number" + ISSUE_NUMBER, () -> {
-            $(withText("#1")).shouldBe(Condition.visible);
+            $(withText("#" + ISSUE_NUMBER)).shouldBe(Condition.visible);
         });
     }
 }
